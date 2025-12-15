@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Todo App LP
 
-## Get started
+## Overview
 
-1. Install dependencies
+Todo App LP is a modern, cross-platform Todo application built with React Native (Expo), TypeScript, and Convex as a backend. It features:
+
+- Fast onboarding and animated intro
+- Add, edit, complete, and delete todos
+- Progress tracking and statistics
+- Theming and beautiful gradients
+- Persistent cloud sync (Convex backend)
+- File-based navigation (Expo Router)
+- Settings, preferences, and a "Danger Zone" for clearing all data
+
+The app is designed for productivity, speed, and a delightful user experience.
+
+## Getting Started
+
+1. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. **Start the app**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+You can open the app in:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [Expo Go](https://expo.dev/go)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Environment Variables
 
-## Get a fresh project
+**Do not commit your real .env file!**
+Instead, use the provided `env.sample` as a template for required environment variables.
 
-When you're ready, run:
+## App Flow
 
-```bash
-npm run reset-project
-```
+1. **Onboarding**: Animated intro and onboarding screens introduce the app's features.
+2. **Main Tabs**: After onboarding, users land on the main tabs:
+   - **Todos**: Add, edit, complete, and delete tasks. All data is synced to the cloud.
+   - **Settings**: View progress stats, change preferences, and access the Danger Zone to clear all todos.
+3. **Backend**: All todos are stored and managed via Convex, ensuring real-time sync and persistence.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Project Structure
 
-## Learn more
+- `app/` — Main app screens and navigation (onboarding, tabs, todos, settings)
+- `components/` — Reusable UI components (input, header, stats, etc.)
+- `convex/` — Backend logic and schema (Convex functions)
+- `assets/` — Images, fonts, and styles
 
-To learn more about developing your project with Expo, look at the following resources:
+## Diagrams
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### App Navigation Flow
 
-## Join the community
+![App Navigation Flow](assets/images/2.svg)
 
-Join our community of developers creating universal apps.
+### Main Features Overview
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![Main Features](assets/images/3.png)
+
+## Final App Screenshots
+
+Below are screenshots of the final app:
+
+![Screenshot 1](final%20app%20photo/IMG-20251215-WA0001.jpg)
+![Screenshot 2](final%20app%20photo/IMG-20251215-WA0002.jpg)
+![Screenshot 3](final%20app%20photo/IMG-20251215-WA0003.jpg)
+![Screenshot 4](final%20app%20photo/IMG-20251215-WA0004.jpg)
+![Screenshot 5](final%20app%20photo/IMG-20251215-WA0005.jpg)
+![Screenshot 6](final%20app%20photo/IMG-20251215-WA0006.jpg)
