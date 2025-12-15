@@ -56,15 +56,6 @@ Instead, use the provided `env.sample` as a template for required environment va
 - `convex/` — Backend logic and schema (Convex functions)
 - `assets/` — Images, fonts, and styles
 
-## Diagrams
-
-### App Navigation Flow
-
-![App Navigation Flow](assets/images/2.svg)
-
-### Main Features Overview
-
-![Main Features](assets/images/3.png)
 
 ## Final App Screenshots
 
